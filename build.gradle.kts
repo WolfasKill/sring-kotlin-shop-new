@@ -6,8 +6,8 @@ plugins {
 	kotlin("plugin.jpa") version "1.9.25"
 }
 
-group = "ru.shopkotlin"
-version = "1.0.0"
+group = "ru.sring-kotlin-shop"
+version = "0.0.1-SNAPSHOT"
 
 java {
 	toolchain {
@@ -20,7 +20,9 @@ repositories {
 }
 
 dependencies {
+	implementation("org.springframework.boot:spring-boot-starter-actuator")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+	implementation("org.springframework.boot:spring-boot-starter-validation")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
